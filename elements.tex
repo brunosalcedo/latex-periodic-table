@@ -54,23 +54,34 @@
 \begin{center}
 \begin{pspicture}(0,-3)(19,8)
 %
-% \psset{gridcolor=black!60, subgridcolor=black!30} \psgrid % Uncomment this line to see a grid
+% Uncomment next line for a black background
+% \psframe[fillcolor=black,fillstyle=solid](-100,-100)(100,100)
+%
+% Uncomment next line to see a grid
+% \psset{gridcolor=black!60, subgridcolor=black!30} \psgrid%  
+% 
+% Title
+\psset{fillstyle=solid,framesize=3.95 0.95,framearc=0.1,linestyle=none}
+\fnode[fillcolor=black!25](7.5,6){title}
+\rput(7.5,6){ \parbox{100cm}{\centering 
+	{\fontfamily{ugq}\selectfont\Huge\bfseries MENDELEYEV } \\[0.5ex]
+	{PERIODIC TABLE OF THE ELEMENTS}}}
 %
 % Group I
 	\element{1}{7}{H}{Hydrogen}{1}{1.008}{black!50}
-	\element{1}{6}{Li}{Lithium}{3}{6.9400}{alkali}
+	\element{1}{6}{Li}{Lithium}{3}{6.940}{alkali}
 	\element{1}{5}{Na}{Sodium}{11}{22.990}{alkali}
 	\element{1}{4}{K}{Potassium}{19}{39.098}{alkali}
 	\element{1}{3}{Rb}{Rubidium}{37}{85.468}{alkali}
-	\element{1}{2}{Cs}{Caesium}{55}{132.91}{alkali}
-	\element{1}{1}{Fr}{Francium}{87}{\ }{alkali}
+	\element{1}{2}{Cs}{Caesium}{55}{132.910}{alkali}
+	\element{1}{1}{Fr}{Francium}{87}{(223)}{alkali}
 % Group II
 	\element{2}{6}{Be}{Beryllium}{4}{9.012}{earth}
 	\element{2}{5}{Mg}{Magnesium}{12}{24.305}{earth}
 	\element{2}{4}{Ca}{Calcium}{20}{40.078}{earth}
 	\element{2}{3}{Sr}{Strontium}{38}{87.620}{earth}
-	\element{2}{2}{Ba}{Barium}{56}{137.33}{earth}
-	\element{2}{1}{Ra}{Radium}{88}{\ }{earth}
+	\element{2}{2}{Ba}{Barium}{56}{137.330}{earth}
+	\element{2}{1}{Ra}{Radium}{88}{(226)}{earth}
 % Group III
 	\element{3}{4}{Sc}{Scandium}{21}{44.956}{transition}
 	\element{3}{3}{Y}{Yttrium}{39}{88.906}{transition}
@@ -79,28 +90,28 @@
 % Group IV
 	\element{4}{4}{Ti}{Titanium}{22}{47.867}{transition}
 	\element{4}{3}{Zr}{Zirconium}{40}{91.224}{transition}
-	\element{4}{2}{Hf}{Hafnium}{72}{178.49}{transition}
-	\element{4}{1}{Rf}{Rutherfordium}{104}{\ }{transition}
+	\element{4}{2}{Hf}{Hafnium}{72}{178.490}{transition}
+	\element{4}{1}{Rf}{Rutherfordium}{104}{(267)}{transition}
 % Group V
 	\element{5}{4}{V}{Vanadium}{22}{47.867}{transition}
 	\element{5}{3}{Nb}{Niobium}{40}{91.224}{transition}
 	\element{5}{2}{Ta}{Tantalum}{72}{178.49}{transition}
-	\element{5}{1}{Db}{Dubnium}{104}{\ }{transition}
+	\element{5}{1}{Db}{Dubnium}{104}{(268)}{transition}
 % Group VI
 	\element{6}{4}{Cr}{Cromium}{24}{51.996}{transition}
 	\element{6}{3}{Mo}{Molybdenum}{42}{95.950}{transition}
 	\element{6}{2}{W}{Tungsten}{74}{183.840}{transition}
-	\element{6}{1}{Sg}{Seaborgium}{106}{\ }{transition}
+	\element{6}{1}{Sg}{Seaborgium}{106}{(269)}{transition}
 % Group VII
 	\element{7}{4}{Mn}{Manganese}{25}{54.938}{transition}
-	\element{7}{3}{Tc}{Technetium}{43}{\ }{transition}
+	\element{7}{3}{Tc}{Technetium}{43}{(98)}{transition}
 	\element{7}{2}{Re}{Rhenium}{75}{186.210}{transition}
-	\element{7}{1}{Bh}{Bohrium}{107}{\ }{transition}
+	\element{7}{1}{Bh}{Bohrium}{107}{(270)}{transition}
 % Group VIII
 	\element{8}{4}{Fe}{Iron}{26}{55.845}{transition}
 	\element{8}{3}{Ru}{Rutherium}{44}{101.070}{transition}
 	\element{8}{2}{Os}{Osmium}{76}{190.230}{transition}
-	\element{8}{1}{Hs}{Hassium}{108}{\ }{transition}
+	\element{8}{1}{Hs}{Hassium}{108}{(277)}{transition}
 % Group IX
 	\element{9}{4}{Co}{Cobalt}{27}{58.933}{transition}
 	\element{9}{3}{Rh}{Rhodium}{45}{102.910}{transition}
@@ -108,13 +119,13 @@
 	%\element{9}{1}{Mt}{Meitnerium}{109}{\ }{}
 % Group X
 	\element{10}{4}{Ni}{Nickel}{28}{58.693}{transition}
-	\element{10}{3}{Pd}{Palladium}{46}{106.42}{transition}
-	\element{10}{2}{Pt}{Platinum}{78}{195.08}{transition}
+	\element{10}{3}{Pd}{Palladium}{46}{106.420}{transition}
+	\element{10}{2}{Pt}{Platinum}{78}{195.080}{transition}
 	%\element{10}{1}{Ds}{Darmstadtium}{110}{\ }{}
 % Group XI
 	\element{11}{4}{Cu}{Copper}{29}{63.546}{transition}
-	\element{11}{3}{Ag}{Silver}{47}{107.87}{transition}
-	\element{11}{2}{Au}{Gold}{79}{196.97}{transition}
+	\element{11}{3}{Ag}{Silver}{47}{107.870}{transition}
+	\element{11}{2}{Au}{Gold}{79}{196.970}{transition}
 	%\element{11}{1}{Rg}{Roentgenium}{111}{\ }{}
 % Group XII
 	\element{12}{4}{Zn}{Zinc}{30}{65.380}{transition}
@@ -132,14 +143,14 @@
 	\element{14}{6}{C}{Carbon}{6}{12.011}{non-metal}
 	\element{14}{5}{Si}{Sillicon}{14}{28.085}{metalloid}
 	\element{14}{4}{Ge}{Germanium}{32}{72.630}{metalloid}
-	\element{14}{3}{Sn}{Tin}{50}{118.71}{post-transition}
+	\element{14}{3}{Sn}{Tin}{50}{118.710}{post-transition}
 	\element{14}{2}{Pb}{Lead}{82}{207.200}{post-transition}
 	%\element{14}{1}{Fl}{Flerovium}{114}{\ }{}
 % Group XV
 	\element{15}{6}{N}{Nitrogen}{7}{14.007}{non-metal}
 	\element{15}{5}{P}{Phosphorus}{15}{30.974}{non-metal}
 	\element{15}{4}{As}{Arsenic}{33}{74.922}{metalloid}
-	\element{15}{3}{Sb}{Antimony}{51}{121.76}{metalloid}
+	\element{15}{3}{Sb}{Antimony}{51}{121.760}{metalloid}
 	\element{15}{2}{Bi}{Bismuth}{83}{208.980}{post-transition}
 	%\element{15}{1}{Mc}{Moscovium}{115}{\ }{}
 % Group XVI
@@ -147,29 +158,29 @@
 	\element{16}{5}{S}{Sulfur}{16}{32.060}{non-metal}
 	\element{16}{4}{Se}{Selenium}{34}{78.971}{non-metal}
 	\element{16}{3}{Te}{Tellurium}{52}{127.600}{metalloid}
-	\element{16}{2}{Po}{Polonium}{84}{\ }{post-transition}
+	\element{16}{2}{Po}{Polonium}{84}{(209)}{post-transition}
 	%\element{16}{1}{Lv}{Livermorium}{116}{\ }{}
 % Group XVII
 	\element{17}{6}{F}{Fluorine}{9}{18.998}{non-metal}
-	\element{17}{5}{Cl}{Chlorine}{17}{35.45}{non-metal}
+	\element{17}{5}{Cl}{Chlorine}{17}{35.450}{non-metal}
 	\element{17}{4}{Br}{Bromine}{35}{79.904}{non-metal}
-	\element{17}{3}{I}{Iodine}{53}{126.90}{non-metal}
-	\element{17}{2}{At}{Astatine}{85}{\ }{metalloid}
+	\element{17}{3}{I}{Iodine}{53}{126.900}{non-metal}
+	\element{17}{2}{At}{Astatine}{85}{(210)}{metalloid}
 	%\element{17}{1}{Ts}{Tennessine}{117}{\ }{}
 % Group XVIII - Noble Gases
-	\element{18}{7}{He}{Hellium}{2}{4.0026}{noble-gas}
+	\element{18}{7}{He}{Hellium}{2}{4.003}{noble-gas}
 	\element{18}{6}{Ne}{Neon}{10}{20.180}{noble-gas}
 	\element{18}{5}{Ar}{Argon}{18}{39.948}{noble-gas}
 	\element{18}{4}{Kr}{Krypton}{36}{83.798}{noble-gas}
-	\element{18}{3}{Xe}{Xenon}{54}{131.29}{noble-gas}
-	\element{18}{2}{Rn}{Radon}{86}{\ }{noble-gas}
+	\element{18}{3}{Xe}{Xenon}{54}{131.290}{noble-gas}
+	\element{18}{2}{Rn}{Radon}{86}{(222)}{noble-gas}
 	%\element{18}{1}{Og}{Oganesson}{118}{\ }{}
 % Lanthanoids
 	\element{3}{-1}{La}{Lantharium}{57}{138.91}{lanthanoid}
 	\element{4}{-1}{Ce}{Cerium}{58}{140.12}{lanthanoid}
 	\element{5}{-1}{Pr}{Praseodymium}{59}{140.91}{lanthanoid}
 	\element{6}{-1}{Nd}{Neodymium}{60}{144.24}{lanthanoid}
-	\element{7}{-1}{Pm}{Promethium}{61}{\ }{lanthanoid}
+	\element{7}{-1}{Pm}{Promethium}{61}{(141)}{lanthanoid}
 	\element{8}{-1}{Sm}{Samarium}{62}{150.36}{lanthanoid}
 	\element{9}{-1}{Eu}{Europium}{63}{151.96}{lanthanoid}
 	\element{10}{-1}{Gd}{Gadolinium}{64}{157.25}{lanthanoid}
@@ -181,21 +192,21 @@
 	\element{16}{-1}{Yb}{Ytterbium}{70}{173.05}{lanthanoid}
 	\element{17}{-1}{Lu}{Lutetium}{71}{174.97}{lanthanoid}
 % Actinoids
-	\element{3}{-2}{Ac}{Actinium}{89}{\ }{actinoid}
+	\element{3}{-2}{Ac}{Actinium}{89}{(227)}{actinoid}
 	\element{4}{-2}{Th}{Thorium}{90}{232.04}{actinoid}
 	\element{5}{-2}{Pa}{Protactinium}{91}{231.04}{actinoid}
 	\element{6}{-2}{U}{Uranium}{92}{238.03}{actinoid}
-	\element{7}{-2}{Np}{Neptunium}{93}{\ }{actinoid}
-	\element{8}{-2}{Pu}{Plutonium}{94}{\ }{actinoid}
-	\element{9}{-2}{Am}{Americium}{95}{\ }{actinoid}
-	\element{10}{-2}{Cm}{Curium}{96}{\ }{actinoid}
-	\element{11}{-2}{Bk}{Berkelium}{97}{\ }{actinoid}
-	\element{12}{-2}{Cf}{Californium}{98}{\ }{actinoid}
-	\element{13}{-2}{Es}{Einstenium}{99}{\ }{actinoid}
-	\element{14}{-2}{Fm}{Fermium}{100}{\ }{actinoid}
-	\element{15}{-2}{Md}{Mendelevium}{101}{\ }{actinoid}
-	\element{16}{-2}{No}{Nobelium}{102}{\ }{actinoid}
-	\element{17}{-2}{Lr}{Lawrencium}{103}{\ }{actinoid}
+	\element{7}{-2}{Np}{Neptunium}{93}{(237)}{actinoid}
+	\element{8}{-2}{Pu}{Plutonium}{94}{(244)}{actinoid}
+	\element{9}{-2}{Am}{Americium}{95}{(243)}{actinoid}
+	\element{10}{-2}{Cm}{Curium}{96}{(247)}{actinoid}
+	\element{11}{-2}{Bk}{Berkelium}{97}{(247)}{actinoid}
+	\element{12}{-2}{Cf}{Californium}{98}{(251)}{actinoid}
+	\element{13}{-2}{Es}{Einstenium}{99}{(252)}{actinoid}
+	\element{14}{-2}{Fm}{Fermium}{100}{(257)}{actinoid}
+	\element{15}{-2}{Md}{Mendelevium}{101}{(258)}{actinoid}
+	\element{16}{-2}{No}{Nobelium}{102}{(259)}{actinoid}
+	\element{17}{-2}{Lr}{Lawrencium}{103}{(266)}{actinoid}
 \end{pspicture}
 \end{center}
 %
