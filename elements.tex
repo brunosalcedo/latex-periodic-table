@@ -30,7 +30,7 @@
 }
 %
 % Size of the element boxes
-\psset{unit=4.4cm}
+\psset{unit=4.3cm}
 %
 % Colors for the different element groups
 \definecolor{noble-gas}{RGB}{200 20 50}
@@ -48,9 +48,14 @@
 % Set text color to white
 \color{white}
 %
+% Space for vertical centering
+\vspace*{\stretch{1}}
+%
 \begin{center}
-\begin{pspicture}(0,0)(19,8)
-%\psset{gridcolor=black!60, subgridcolor=black!30} \psgrid
+\begin{pspicture}(0,-3)(19,8)
+%
+% \psset{gridcolor=black!60, subgridcolor=black!30} \psgrid % Uncomment this line to see a grid
+%
 % Group I
 	\element{1}{7}{H}{Hydrogen}{1}{1.008}{black!50}
 	\element{1}{6}{Li}{Lithium}{3}{6.9400}{alkali}
@@ -193,4 +198,8 @@
 	\element{17}{-2}{Lr}{Lawrencium}{103}{\ }{actinoid}
 \end{pspicture}
 \end{center}
+%
+% Space for vertical centering
+\vspace*{\stretch{1}}
+\ 
 \end{document}
